@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <title>Magic 8 Ball</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head> 
+  
+  <body>
+    <!-- title -->
+    <h1>GWC Portsmouth: 8-Ball</h1>
+
+    <!-- paragraph asking user to ask question, followed by paragraph with image -->
+    <p>Ask me what you want to know.</p>
+    <p><img src="https://cdn.glitch.com/600bcbbb-b3f2-418a-ba17-a4ebe373fb80%2F71FfSFVzXJL._SL1500_%5B1%5D.jpg?v=1571847178641" width="200"/></p>
+
+    <!-- a field where user can specify question and a button to submit the question -->
+    <input type="text" name="question" id="gwc_question" value="" />
+    <button onclick="clickAsk(document.getElementById('gwc_question').value)">Ask</button>
+    
+    <!-- some blank lines to space our answer -->
+    <br><br>
+    
+    <!-- a div that we can replace -->
+    <div id="gwc_answer">
+      Your answer will appear here
+    </div>
+    
+  </body>
+</html>
